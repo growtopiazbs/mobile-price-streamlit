@@ -1,29 +1,3 @@
-"""Mobile Price: Streamlit-приложение из двух файлов.
-
-Файлы проекта: app.py (интерфейс, прогноз и воспроизводимое обучение)
-и model.json (обученная модель, параметры стандартизации и метрики).
-
-Локальный запуск:
-    python -m pip install streamlit
-    streamlit run app.py
-
-Streamlit Community Cloud:
-    Repository: <ваш аккаунт>/mobile-price-streamlit
-    Branch: main
-    Main file path: app.py
-    Python: 3.12
-
-Для работы приложения нужен только Streamlit, который Community Cloud
-устанавливает по умолчанию. Поэтому requirements.txt не требуется.
-Модель загружается локально; Kaggle, токены и scikit-learn при запуске не нужны.
-
-Повторное обучение (не требуется для запуска):
-    python -m pip install scikit-learn==1.8.0
-    python app.py --train /path/to/train.csv
-
-train.csv: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification
-"""
-
 import argparse
 import csv
 import hashlib
