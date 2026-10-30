@@ -318,19 +318,6 @@ def main():
             f'C = {metrics["selected_c"]:g}; средняя точность кросс-валидации: '
             f'{metrics["cv_accuracy"]:.1%}. После оценки сохранены те же веса модели.'
         )
-    with st.expander("Как запустить проект"):
-        st.markdown(
-            "**Локально:** поместите `app.py` и `model.json` в одну папку "
-            "и выполните команды ниже."
-        )
-        st.code("python -m pip install streamlit\nstreamlit run app.py", language="bash")
-        st.markdown(
-            "**Streamlit Community Cloud:** создайте приложение из GitHub, "
-            "выберите репозиторий `mobile-price-streamlit`, ветку `main`, "
-            "основной файл `app.py` и Python 3.12. "
-            "Два файла достаточны: дополнительных библиотек, ключей и "
-            "загрузки датасета при запуске не требуется."
-        )
 
 
 if __name__ == "__main__":
